@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFF8F0</color> <!-- Háttér szín -->
+    <color name="menu">#FF5722</color> <!-- Menühöz narancssárga -->
+    <color name="logo_background">#FF5722</color> <!-- Logo background -->
+    <color name="text_title">#FF5722</color> <!-- Cím szöveg szín -->
+    <color name="text">#000000</color> <!-- Fő szöveg szín -->
+    <color name="first_button">#FF5722</color> <!-- Gomb szín (narancs) -->
+    <color name="hint_text">#FA734A</color> <!-- Hint szöveg szín -->
+    <color name="ikon">#FF5722</color> <!-- Ikon szín -->
+    <color name="EditTextBorder">#FF5722</color> <!-- Keret szín -->
+</resources>

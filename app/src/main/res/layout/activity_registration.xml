@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".RegistrationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="NoteBox"
+        app:titleTextColor="@color/text" />
+
+    <TextView
+        android:id="@+id/RegistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/regisztracio_title"
+        android:textAllCaps="true"
+        android:textColor="@color/text_title"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintVertical_bias="0.066"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        android:ems="10"
+        android:hint="@string/Felhasznalonev_input"
+        android:textColorHint="@color/hint_text"
+        android:textColor="@color/text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegistTextView"
+        app:layout_constraintVertical_bias="0.050000012"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/userEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        android:ems="10"
+        android:hint="@string/email_cim_input"
+        android:textColorHint="@color/hint_text"
+        android:textColor="@color/text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+        app:layout_constraintVertical_bias="0.050000012"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        android:ems="10"
+        android:hint="@string/jelszo_input"
+        android:textColorHint="@color/hint_text"
+        android:textColor="@color/text"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailEditText"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/passwordAgainEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        android:ems="10"
+        android:hint="@string/jelszo_megerositese_input"
+        android:textColorHint="@color/hint_text"
+        android:textColor="@color/text"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/phoneSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTintMode="multiply"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAgainEditText"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        app:backgroundTint="@color/first_button"
+        android:layout_margin="@dimen/input_margin"
+        android:padding="@dimen/input_padding"
+        android:ems="10"
+        android:hint="@string/telefonszam_input"
+        android:textColorHint="@color/hint_text"
+        android:textColor="@color/text"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneSpinner"
+        app:layout_constraintVertical_bias="0.055"
+        tools:layout_editor_absoluteX="0dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditText"
+        app:layout_constraintVertical_bias="0.050000012"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.button.MaterialButton
+            app:rippleColor="@color/text"
+            android:id="@+id/RegistButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:text="@string/regisztracio"
+            android:textColor="@color/text"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            app:backgroundTint="@color/first_button" />
+
+        <com.google.android.material.button.MaterialButton
+            app:rippleColor="@color/text"
+            android:id="@+id/CancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/text"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            app:backgroundTint="@color/first_button" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

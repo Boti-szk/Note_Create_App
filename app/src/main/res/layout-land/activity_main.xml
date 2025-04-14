@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="NoteBox"
+        app:titleTextColor="@color/text"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@mipmap/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/default_margin">
+
+            <com.google.android.material.button.MaterialButton
+                android:visibility="invisible"
+                app:rippleColor="@color/text"
+                android:id="@+id/GuestLoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_margin"
+                app:backgroundTint="@color/first_button"
+                android:text="@string/vendeg_bejelentkezes"
+                android:textColor="@color/text"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold"
+                android:onClick="guestLogin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:visibility="invisible"
+                app:rippleColor="@color/text"
+                android:id="@+id/LoginPageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_margin"
+                app:backgroundTint="@color/first_button"
+                android:text="@string/login"
+                android:textColor="@color/text"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold"
+                android:onClick="login_page" />
+
+            <com.google.android.material.button.MaterialButton
+                android:visibility="invisible"
+                app:rippleColor="@color/text"
+                android:id="@+id/RegisterPageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/first_button"
+                android:text="@string/regisztracio"
+                android:onClick="register_page"
+                android:textColor="@color/text"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

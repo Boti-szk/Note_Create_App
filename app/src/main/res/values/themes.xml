@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Note_Create_App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Note_Create_App" parent="Base.Theme.Note_Create_App" />
+<!--    <color name="background">#FFF8F0</color> &lt;!&ndash; Háttér szín &ndash;&gt;-->
+<!--    <color name="menu">#FF5722</color> &lt;!&ndash; Menühöz narancssárga &ndash;&gt;-->
+<!--    <color name="logo_background">#FF5722</color> &lt;!&ndash; Logo background &ndash;&gt;-->
+<!--    <color name="text_title">#FF5722</color> &lt;!&ndash; Cím szöveg szín &ndash;&gt;-->
+<!--    <color name="text">#000000</color> &lt;!&ndash; Fő szöveg szín &ndash;&gt;-->
+<!--    <color name="first_button">#FF5722</color> &lt;!&ndash; Gomb szín (narancs) &ndash;&gt;-->
+<!--    <color name="hint_text">#FA734A</color> &lt;!&ndash; Hint szöveg szín &ndash;&gt;-->
+<!--    <color name="ikon">#FF5722</color> &lt;!&ndash; Ikon szín &ndash;&gt;-->
+<!--    <color name="EditTextBorder">#FF5722</color> &lt;!&ndash; Keret szín &ndash;&gt;-->
+</resources>

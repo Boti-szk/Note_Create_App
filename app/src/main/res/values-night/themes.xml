@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Note_Create_App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+<!--    <color name="background">#1F1F1F</color> &lt;!&ndash; Sötét háttér &ndash;&gt;-->
+<!--    <color name="menu">#FFAB91</color> &lt;!&ndash; Menühöz narancssárga &ndash;&gt;-->
+<!--    <color name="logo_background">#FFAB91</color> &lt;!&ndash; Logo background &ndash;&gt;-->
+<!--    <color name="text_title">#FFAB91</color> &lt;!&ndash; Cím szöveg szín sötét módhoz &ndash;&gt;-->
+<!--    <color name="text">#FFFFFF</color> &lt;!&ndash; Fő szöveg szín sötét módhoz &ndash;&gt;-->
+<!--    <color name="first_button">#FFAB91</color> &lt;!&ndash; Gomb szín sötét módhoz &ndash;&gt;-->
+<!--    <color name="hint_text">#FF9E80</color> &lt;!&ndash; Hint szöveg szín &ndash;&gt;-->
+<!--    <color name="ikon">#FFAB91</color> &lt;!&ndash; Ikon szín sötét módhoz &ndash;&gt;-->
+<!--    <color name="EditTextBorder">#FFAB91</color> &lt;!&ndash; Keret szín sötét módhoz &ndash;&gt;-->
+</resources>

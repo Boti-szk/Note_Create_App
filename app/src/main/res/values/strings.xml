@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NoteBox</string>
+    <string name="Felhasznalonev_input">Felhasználónév</string>
+    <string name="jelszo_input">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="regisztracio">Regisztráció</string>
+    <string name="email_cim_input">Email cím</string>
+    <string name="jelszo_megerositese_input">Jelszó megerősítése</string>
+    <string name="cancel">Mégse</string>
+    <string name="telefonszam_input">Telefonszám</string>
+    <string name="cim_input">Cím</string>
+    <string name="google_bejelentkezes">Bejelentkezés Google-fiókkal</string>
+    <string name="vendeg_bejelentkezes">Belépés vendégként</string>
+    <string name="kijelentkezes">Kijelentkezés</string>
+    <string name="bejelentkezes_title">Bejelentkezés</string>
+    <string name="regisztracio_title">Regisztráció</string>
+    <string name="vagy">VAGY</string>
+    <string-array name="phone_modes">
+        <item>Mobil</item>
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+    </string-array>
+</resources>
