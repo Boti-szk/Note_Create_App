@@ -2,6 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/search_bar"
+        android:title="@string/kereses"
+        android:icon="@drawable/search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profil"
+        android:icon="@drawable/profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/view_selector"
+        android:title="@string/nezet"
+        android:icon="@drawable/view_grid"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/log_out"
         android:title="@string/kijelentkezes"
         android:icon="@drawable/logout"

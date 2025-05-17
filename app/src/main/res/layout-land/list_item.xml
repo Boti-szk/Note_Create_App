@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:backgroundTint="@color/ListBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cím helye"
+            android:textSize="18sp"
+            android:textColor="@color/text_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noteDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2025.05.09."
+            android:textColor="@color/hint_text"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/noteContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tartalom előnézet..."
+            android:textColor="@color/text"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                app:rippleColor="@color/text"-->
+<!--                android:id="@+id/Edit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/modositas"-->
+<!--                android:backgroundTint="@color/first_button"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:layout_marginEnd="8dp" />-->
+
+            <com.google.android.material.button.MaterialButton
+                app:rippleColor="@color/text"
+                android:id="@+id/Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:backgroundTint="@color/first_button"
+                android:textColor="@color/text" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

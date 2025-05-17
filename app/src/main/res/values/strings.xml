@@ -15,6 +15,19 @@
     <string name="bejelentkezes_title">Bejelentkezés</string>
     <string name="regisztracio_title">Regisztráció</string>
     <string name="vagy">VAGY</string>
+    <string name="delete">Törlés</string>
+    <string name="modositas">Módosítás</string>
+    <string name="beallitasok">Beállítások</string>
+    <string name="kereses">Keresés</string>
+    <string name="profil">Profil</string>
+    <string name="nezet">Nézet</string>
+    <string name="add_note">Új jegyzet létrehozása</string>
+    <string name="uj_jegyzet">Új jegyzet</string>
+    <string name="jegyzet_cim">Jegyzet címe</string>
+    <string name="content">Tartalom</string>
+    <string name="mentes">Mentés</string>
+    <string name="vissza">Vissza</string>
+
     <string-array name="phone_modes">
         <item>Mobil</item>
         <item>Otthoni</item>

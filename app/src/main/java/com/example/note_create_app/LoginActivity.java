@@ -148,7 +148,8 @@ public class LoginActivity extends AppCompatActivity {
     public void register(View view) {
         Intent intent = new Intent(this, RegistrationActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
-
+        intent.putExtra("email", emailET.getText().toString());
+        intent.putExtra("password", passwordET.getText().toString());
         startActivity(intent);
     }
 

@@ -9,4 +9,6 @@
     <color name="hint_text">#FA734A</color> <!-- Hint szöveg szín -->
     <color name="ikon">#FF5722</color> <!-- Ikon szín -->
     <color name="EditTextBorder">#FF5722</color> <!-- Keret szín -->
+    <color name="ListBackground">#FFF2E5</color> <!-- Lista hátter szín -->
+    <color name="WHITE">#FFFFFF</color>
 </resources>

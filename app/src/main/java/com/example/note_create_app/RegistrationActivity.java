@@ -24,6 +24,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class RegistrationActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -69,12 +73,17 @@ public class RegistrationActivity extends AppCompatActivity implements AdapterVi
         spinner = findViewById(R.id.phoneSpinner);
 
         preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
-        String userName = preferences.getString("userName", "");
-        String password = preferences.getString("password", "");
+        Intent intent = getIntent();
+        String email = intent.getStringExtra("email");
+        String password = intent.getStringExtra("password");
 
-        userNameEditText.setText(userName);
-        passwordEditText.setText(password);
-        passwordAgainEditText.setText(password);
+        if (email != null) {
+            userEmailEditText.setText(email);
+        }
+        if (password != null) {
+            passwordEditText.setText(password);
+            passwordAgainEditText.setText(password);
+        }
 
         spinner.setOnItemSelectedListener(this);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.phone_modes, android.R.layout.simple_spinner_item);
@@ -120,7 +129,27 @@ public class RegistrationActivity extends AppCompatActivity implements AdapterVi
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Log.d(LOG_TAG, "sikeres regisztráció");
-                    startNoteCreate();
+                    String uid = mAuth.getCurrentUser().getUid();
+                    Map<String,Object> userData = new HashMap<>();
+                    userData.put("username", userName);
+                    userData.put("email", email);
+                    userData.put("phone", phoneNumber);
+                    userData.put("phoneType", phoneType);
+                    userData.put("profileImageUrl", null);
+
+                    FirebaseFirestore.getInstance()
+                            .collection("users")
+                            .document(uid)
+                            .set(userData)
+                            .addOnSuccessListener(aVoid -> {
+                                Log.d(LOG_TAG, "User data saved");
+                                startNoteCreate();
+                            })
+                            .addOnFailureListener(e -> {
+                                Log.e(LOG_TAG, "Error saving user data", e);
+                                Toast.makeText(RegistrationActivity.this, "Adatmentési hiba", Toast.LENGTH_SHORT).show();
+                            });
+
                 }
                 else{
                     Log.d(LOG_TAG, "sikertelen regisztráció: "+task.getException().getMessage());
